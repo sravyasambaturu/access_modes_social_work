@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Access Modes in Mental Health: An Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flowchart-connector {
+            flex-grow: 1;
+            height: 2px;
+            background-color: #F47B20;
+        }
+        .flowchart-arrow {
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 12px solid #F47B20;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-[#00A9E0] text-white p-8 text-center shadow-lg">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-2">The Digital Transformation of Mental Health Support</h1>
+        <p class="text-lg max-w-3xl mx-auto">Exploring the evidence-based digital modalities revolutionizing access to mental health training and care, making support more scalable, flexible, and effective.</p>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section class="text-center my-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">A Rapidly Evolving Landscape</h2>
+            <p class="max-w-3xl mx-auto text-gray-600 mb-8">The integration of technology into mental health is accelerating. Conversational AI, for example, represents a significant frontier, with research in the field showing remarkable growth and demonstrating its potential to augment the mental health workforce.</p>
+            <div class="bg-white rounded-lg shadow-xl p-8 inline-block">
+                <div class="text-7xl font-black text-[#F47B20]">46.19%</div>
+                <div class="text-xl font-semibold text-gray-700 mt-2">Annual Growth Rate</div>
+                <p class="text-sm text-gray-500">in academic research on chatbots for mental health over the past decade.</p>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                <h3 class="text-2xl font-bold mb-4 text-[#00A9E0]">🌐 Web-Based Programs</h3>
+                <p class="text-gray-600 mb-4 flex-grow">As a foundational tier, web-based e-learning democratizes access to specialized knowledge. These platforms deliver self-paced training to a diverse audience, expanding the network of informed "gatekeepers" in communities and professional settings.</p>
+                <div class="chart-container h-64 md:h-80">
+                    <canvas id="webAudienceChart"></canvas>
+                </div>
+                 <p class="text-center text-sm text-gray-500 mt-2">Web-based programs effectively train a wide range of individuals, from clinicians to journalists, enhancing community-wide mental health literacy.</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                <h3 class="text-2xl font-bold mb-4 text-[#F47B20]">🤖 Conversational AI (Chatbots)</h3>
+                <p class="text-gray-600 mb-4 flex-grow">AI-powered chatbots are emerging as powerful tools for personalized, on-demand support. Clinical trials show their efficacy in reducing symptoms for various mental health conditions, creating a functional "therapeutic alliance" with users.</p>
+                <div class="chart-container h-64 md:h-80">
+                    <canvas id="chatbotEfficacyChart"></canvas>
+                </div>
+                 <p class="text-center text-sm text-gray-500 mt-2">The Therabot trial showed significant symptom reduction across major disorders, highlighting the therapeutic potential of generative AI.</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                <h3 class="text-2xl font-bold mb-4 text-[#FDB913]">🎥 Interactive Video Simulations</h3>
+                <p class="text-gray-600 mb-4 flex-grow">Simulations bridge the theory-practice gap by providing a safe space to develop clinical skills. They offer a trade-off between the high authenticity of actor-based scenarios and the scalability of virtual clients, a gap generative AI is poised to close.</p>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="p-3 font-semibold">Feature</th>
+                                <th class="p-3 font-semibold">Actor-Based</th>
+                                <th class="p-3 font-semibold">Virtual Client</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="p-3 font-medium">Authenticity</td>
+                                <td class="p-3 text-green-600 font-bold">High</td>
+                                <td class="p-3 text-yellow-600 font-bold">Moderate</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 font-medium">Scalability</td>
+                                <td class="p-3 text-red-600 font-bold">Low</td>
+                                <td class="p-3 text-green-600 font-bold">High</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-medium">Repeatability</td>
+                                <td class="p-3 text-red-600 font-bold">Low</td>
+                                <td class="p-3 text-green-600 font-bold">High</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-4">Simulations are indispensable for experiential learning, allowing trainees to apply knowledge in dynamic, risk-free environments.</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                <h3 class="text-2xl font-bold mb-4 text-[#00A651]">🎧 Audio-Based Training</h3>
+                <p class="text-gray-600 mb-4 flex-grow">Audio-centric modules and podcasts offer a unique pathway for developing skills reliant on spoken interaction, such as active listening. By focusing on auditory cues, these tools build the trust and rapport essential for effective communication in sensitive situations.</p>
+                <div class="space-y-3">
+                    <h4 class="font-semibold text-lg text-center">The RASA Active Listening Model</h4>
+                    <div class="p-3 bg-green-100 rounded-lg text-center"><strong class="text-green-800">R</strong>eceive - Pay attention to the speaker.</div>
+                    <div class="p-3 bg-green-100 rounded-lg text-center"><strong class="text-green-800">A</strong>cknowledge - Show you are listening.</div>
+                    <div class="p-3 bg-green-100 rounded-lg text-center"><strong class="text-green-800">S</strong>ummarize - Clarify your understanding.</div>
+                    <div class="p-3 bg-green-100 rounded-lg text-center"><strong class="text-green-800">A</strong>sk - Inquire for more information.</div>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-4">Combining flexible audio content with human-facilitated discussion maximizes both the reach and impact of training.</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                <h3 class="text-2xl font-bold mb-4 text-[#ED1C24]">📺 Large Screen & Group Training</h3>
+                <p class="text-gray-600 mb-4 flex-grow">Using large displays for group training and public service announcements (PSAs) facilitates collective learning and drives public awareness. TV campaigns, for example, have been proven to significantly increase help-seeking behavior.</p>
+                 <div class="text-center my-auto">
+                    <div class="text-7xl font-black text-[#ED1C24]">1.6x</div>
+                    <div class="text-xl font-semibold text-gray-700 mt-2">Increase in Crisis Calls</div>
+                    <p class="text-sm text-gray-500">observed during a TV PSA campaign, confirming the positive influence on public help-seeking.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                 <h3 class="text-2xl font-bold mb-4 text-gray-800">⚖️ The Ethical Imperative</h3>
+                <p class="text-gray-600 mb-4 flex-grow">The rapid rise of AI in mental health necessitates a robust ethical framework. Concerns about privacy, safety, accountability, and the nature of AI empathy must be addressed to ensure responsible innovation and maintain public trust.</p>
+                <div class="chart-container h-64 md:h-80">
+                    <canvas id="ethicsChart"></canvas>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-2">A multi-faceted approach is needed to navigate the complex ethical landscape of digital mental health tools.</p>
+            </div>
+
+        </div>
+
+        <section class="mt-16 bg-white rounded-lg shadow-xl p-8">
+            <h2 class="text-3xl font-bold text-center mb-2 text-[#00A9E0]">Future Outlook: A Tiered, Integrated Ecosystem</h2>
+            <p class="text-center max-w-4xl mx-auto text-gray-600 mb-10">The optimal strategy for digital mental health involves an integrated system where each modality is deployed based on its strengths. This creates a seamless pathway from broad public awareness to specialized, high-touch care, ensuring individuals receive the right level of support at the right time.</p>
+
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                
+                <div class="text-center p-4 border-2 border-dashed border-gray-300 rounded-lg w-full md:w-1/4">
+                    <div class="text-2xl mb-2">📢</div>
+                    <h4 class="font-bold text-lg">Tier 1: Awareness</h4>
+                    <p class="text-sm">Web Platforms & Public Campaigns build foundational knowledge and reduce stigma.</p>
+                </div>
+
+                <div class="w-full md:w-auto flex items-center justify-center">
+                    <div class="flowchart-connector hidden md:block"></div>
+                    <div class="flowchart-arrow"></div>
+                </div>
+
+                <div class="text-center p-4 border-2 border-dashed border-gray-300 rounded-lg w-full md:w-1/4">
+                    <div class="text-2xl mb-2">🧠</div>
+                    <h4 class="font-bold text-lg">Tier 2: Skill-Building</h4>
+                    <p class="text-sm">Simulations, Chatbots & Audio Modules provide personalized, interactive training and support.</p>
+                </div>
+                
+                <div class="w-full md:w-auto flex items-center justify-center">
+                    <div class="flowchart-connector hidden md:block"></div>
+                    <div class="flowchart-arrow"></div>
+                </div>
+
+                <div class="text-center p-4 border-2 border-dashed border-gray-300 rounded-lg w-full md:w-1/4">
+                    <div class="text-2xl mb-2">🤝</div>
+                    <h4 class="font-bold text-lg">Tier 3: Human Care</h4>
+                    <p class="text-sm">Digital tools guide users to traditional services for complex needs and direct clinical intervention.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-4 bg-gray-800 text-white mt-12">
+        <p>Infographic based on the report: "Digital Access Modes in Mental Health Training and Support: An Evidence-Based Analysis".</p>
+    </footer>
+
+    <script>
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+
+        const wrapLabels = (label, maxWidth = 16) => {
+            if (typeof label !== 'string' || label.length <= maxWidth) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).trim().length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        };
+
+        const chartColors = {
+            blue: '#00A9E0',
+            orange: '#F47B20',
+            yellow: '#FDB913',
+            green: '#00A651',
+            red: '#ED1C24',
+            gray: '#6B7280'
+        };
+
+        const webAudienceCtx = document.getElementById('webAudienceChart').getContext('2d');
+        new Chart(webAudienceCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Health Professionals', 'Students', 'Journalists', 'General Public'],
+                datasets: [{
+                    label: 'Target Audience',
+                    data: [35, 25, 15, 25],
+                    backgroundColor: [chartColors.blue, chartColors.green, chartColors.yellow, chartColors.orange],
+                    borderColor: '#fff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                           title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        const chatbotEfficacyCtx = document.getElementById('chatbotEfficacyChart').getContext('2d');
+        new Chart(chatbotEfficacyCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Major Depression', 'Anxiety', 'Eating Disorders'],
+                datasets: [{
+                    label: 'Symptom Reduction (%)',
+                    data: [51, 31, 19],
+                    backgroundColor: [chartColors.orange, chartColors.yellow, chartColors.red],
+                    borderColor: '#fff',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                 scales: {
+                    x: {
+                        beginAtZero: true,
+                         ticks: {
+                            callback: function(value) {
+                                return value + '%'
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                         callbacks: {
+                           title: tooltipTitleCallback,
+                           label: function(context) {
+                                return `Reduction: ${context.raw}%`;
+                           }
+                        }
+                    }
+                }
+            }
+        });
+        
+        const ethicsData = {
+            labels: [
+                wrapLabels('Safety & Harm'),
+                wrapLabels('Privacy & Confidentiality'),
+                wrapLabels('Responsibility & Accountability'),
+                wrapLabels('Justice & Equity'),
+                wrapLabels('Empathy & Humanness'),
+                wrapLabels('Transparency & Trust')
+            ],
+            datasets: [{
+                label: 'Level of Concern',
+                data: [9, 9.5, 8, 7, 7.5, 8.5],
+                fill: true,
+                backgroundColor: 'rgba(0, 169, 224, 0.2)',
+                borderColor: 'rgba(0, 169, 224, 1)',
+                pointBackgroundColor: 'rgba(0, 169, 224, 1)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgba(0, 169, 224, 1)'
+            }]
+        };
+
+        const ethicsCtx = document.getElementById('ethicsChart').getContext('2d');
+        new Chart(ethicsCtx, {
+            type: 'radar',
+            data: ethicsData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: {
+                            display: false
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 10,
+                        pointLabels: {
+                            font: {
+                                size: 10
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
